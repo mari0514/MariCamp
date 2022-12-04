@@ -1,69 +1,11 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-
-/* html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-body {
-    line-height:1;
-}
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
-}
-
-nav ul {
-    list-style:none;
-}
-
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-} */
-
-
-/* ↓ editable ↓ */
-
 /* Fonts */
-body {
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html {
     font-family: Lato, 'sans serif';
+}
+
+body {
+    margin: 0;
 }
 
 /* Variables */
@@ -79,6 +21,8 @@ body {
     background-image: url("../assets/img/camp.jpeg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    /* background: url("../assets/img/camp.jpeg") no-repeat center center; */
 }
 
 .dark-background {
@@ -97,13 +41,6 @@ body {
 
 .orange-text {
     color: var(--orange);
-}
-
-#first-article {
-    border: 6px solid lightgreen;
-    padding: 8px 16px;
-    color: var(--white);
-    height: 420px;
 }
 
 /* Header */
@@ -140,6 +77,49 @@ li:hover {
     background-color: var(--hover);
 }
 
+h2, h3 {
+    margin-top: 0;
+}
+
+h3 + p {
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 12px;
+}
+
+#first-article {
+    border: 5px solid rgb(215, 226, 71);
+    padding: 48px 18px;
+    color: var(--white);
+    height: auto;
+    text-align: center;
+}
+
+#first-article h1 {
+    font-size: 40px;
+}
+
+#first-article h1, p {
+    margin: 16px 0;
+    margin-top: 0;
+}
+#first-article p {
+    font-size: 14px;
+}
+
+#second-article {
+    border: 5px solid rgb(200, 71, 226);
+    padding: 48px 32px 80px;
+    text-align: center;
+}
+
+#second-article h2, p {
+    margin: 16px 0;
+    margin-top: 0;
+}
+
 .dark-button {
     background-color: var(--dark);
     color: var(--white);
@@ -150,13 +130,23 @@ li:hover {
 }
 
 .bold {
-    font-weight:bolder
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    text-align: center;
+}
+
+.flex > article {
+    padding: 24px;
 }
 
 
 
 footer {
     height: 64px;
+    text-align: center;
 }
 
 /* media queries */
@@ -184,5 +174,9 @@ footer {
 
     h6 {
         font-size: 1em;
+    }
+
+    .flex {
+        flex-direction: column;
     }
 }
