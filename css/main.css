@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-/* Variables */
+/* Colors */
 :root {
     --white: #f4f4f4;
     --dark: #333333;
@@ -22,7 +22,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* background: url("../assets/img/camp.jpeg") no-repeat center center; */
 }
 
 .dark-background {
@@ -55,6 +54,7 @@ header {
     padding: 0 16px
 }
 
+/* Body */
 h6 {
     font-size: 1.5em;
 }
@@ -89,9 +89,24 @@ p {
     font-size: 12px;
 }
 
+button {
+    padding: 12px;
+    border: none;
+}
+
+.join-us {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.read-me {
+    background-color: var(--white);
+    color: var(--dark);
+}
+
 #first-article {
-    border: 5px solid rgb(215, 226, 71);
-    padding: 48px 18px;
+    /* border: 5px solid rgb(215, 226, 71); */
+    padding: 48px 18px 32px;
     color: var(--white);
     height: auto;
     text-align: center;
@@ -110,8 +125,8 @@ p {
 }
 
 #second-article {
-    border: 5px solid rgb(200, 71, 226);
-    padding: 48px 32px 80px;
+    /* border: 5px solid rgb(200, 71, 226); */
+    padding: 48px 32px 140px;
     text-align: center;
 }
 
@@ -136,20 +151,31 @@ p {
 .flex {
     display: flex;
     text-align: center;
+    justify-content: space-around;
 }
 
 .flex > article {
     padding: 24px;
 }
 
+.flex > p {
+    font-size: 8px;
+}
 
 
 footer {
+    margin: 0 auto;
     height: 64px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* media queries */
+footer > p {
+    margin-bottom: 0;
+}
+
+/* Media Queries */
 @media screen and (max-width: 420px) {
     header {
         height: auto;
@@ -161,8 +187,14 @@ footer {
         width: 100%;
     }
 
+    a {
+        /* border: 1px solid red; */
+        font-size: 12px;
+    }
+    
     li {
-        border: 1px solid red;
+        height: 12px;
+        padding: 4px 0;
     }
 
     ul, li, h6, nav {
@@ -172,8 +204,17 @@ footer {
         text-align: center;
     }
 
+    nav {
+        margin-top: 0;
+    }
+
     h6 {
+        margin-top: 16px;
         font-size: 1em;
+    }
+
+    h3 {
+        font-size: 12px;
     }
 
     .flex {
