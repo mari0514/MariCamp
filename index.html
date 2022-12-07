@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/817353c889.js" crossorigin="anonymous"></script>
     <title>MariCamp</title>
 </head>
 <body>
-    <header class="dark-background">
-        <h6>MariCamp</h6>
+    <header>
+        <h1 id="logo">
+            MariCamp
+        </h1>
         <nav>
             <ul>
                 <li>
@@ -29,42 +28,35 @@
         </nav>
     </header>
     <main>
-        <article class="image-background" id="first-article">
-            <h1 class="bold"><span class="orange-text">Enjoy</span> Your Camping Time</h1>
+        <article>
+            <h1><span class="orange-text">Enjoy</span> Your Camping Time</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Dolor, eligendi laboriosam. Repellendus officia harum eaque.</p>
-            <button class="join-us">Join Us</button>
+            <button>Join Us</button>
         </article>
-        <article class="dark-background" id="second-article">
-            <h2 class="bold"><span class="orange-text">About</span> MariCamp</h2>
+        <article>
+            <h5><span class="orange-text">About</span> MariCamp</h5>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda aliquam dolor alias iste autem, quaerat magni unde accusantium qui fuga placeat quidem quo pariatur, voluptatum, ea sequi? Corporis, explicabo quisquam dolor placeat praesentium nesciunt mollitia quos nobis natus voluptatum asperiores!</p>
-            <button class="read-me">Read Me</button>
+            <button>Read Me</button>
         </article>
 
-        <div class="flex">
-            <article class="light-background">
-                <span class="material-symbols-outlined">
-                    location_on
-                </span>
-                <h3 class="bold">Great Location</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis?</p>
-            </article>
-            <article class="orange-background">
-                <span class="material-symbols-outlined">
-                    camping
-                </span>
-                <h3 class="bold">Reant A Tent</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis?</p>
-            </article>
-            <article class="light-background">
-                <span class="material-symbols-outlined">
-                    local_fire_department
-                </span>
-                <h3 class="bold">Chill By The Campfire</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis?</p>
-            </article>
-        </div>
+        <section>
+            <i class="fa-solid fa-location-dot"></i>
+            <h6>Great Location</h6>
+            <p>Pariatur nostrud minim nulla enim est et in occaecat.</p>
+        </section>
+        <section>
+            <i class="fa-solid fa-campground"></i>
+            <h6>Rent A Tent</h6>
+            <p>Pariatur nostrud minim nulla enim est et in occaecat.</p>
+        </section>
+        <section>
+            <i class="fa-solid fa-fire"></i>
+            <h6>Chill By The Campfire</h6>
+            <p>Pariatur nostrud minim nulla enim est et in occaecat.</p>
+        </section>
+
     </main>
-    <footer class="dark-background">
+    <footer>
         <p>MariCamp &copy; 2022, All Rights Reserved</p>
     </footer>
 </body>
